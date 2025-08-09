@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en [Nombre de tu Pueblo]</title>
+    <meta name="description" content="Descubre los mejores bares, rutas y lugares de [Nombre de tu Pueblo].">
+    
+    <!-- Enlace a nuestra hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Descubre [Nombre de tu Pueblo]</h1>
+        <nav>
+            <a href="#gastronomia">Gastronomía</a>
+            <a href="#lugares">Lugares de Interés</a>
+            <a href="#rutas">Rutas y Senderismo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Tu próxima aventura te espera</h2>
+            <!-- Aquí irá una imagen o video impactante de tu pueblo -->
+        </section>
+
+        <section id="gastronomia">
+            <h2>Gastronomía Local</h2>
+            <div id="bares-container" class="card-container">
+                <!-- Los bares y restaurantes se cargarán aquí desde Firebase -->
+            </div>
+        </section>
+
+        <section id="lugares">
+            <h2>Lugares que no te puedes perder</h2>
+            <div id="lugares-container" class="card-container">
+                <!-- Los lugares de interés se cargarán aquí -->
+            </div>
+        </section>
+        
+        <section id="rutas">
+            <h2>Rutas y Senderismo</h2>
+            <div id="rutas-container" class="card-container">
+                <!-- Las rutas se cargarán aquí -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [Nombre de tu Pueblo] Turismo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="js/app.js">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCZqpDZvv9-TpRCB2YsZnXBtR8r2VhP1yM",
+            authDomain: "turismo-mi-pueblo.firebaseapp.com",
+            projectId: "turismo-mi-pueblo",
+            storageBucket: "turismo-mi-pueblo.firebasestorage.app",
+            messagingSenderId: "499537377142",
+            appId: "1:499537377142:web:600a807af619ea10aaec57",
+            measurementId: "G-56SRH8D3HF"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+</body>
+</html>
