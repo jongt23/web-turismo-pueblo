@@ -3,7 +3,7 @@
 // ===============================================================
 const firebaseConfig = {
     // ... Pega tu configuración de Firebase aquí ...
-    apiKey: "AIzaSyCZqpDZvv9-TpRCB2YsZnXBtR8r2VhP1yM",
+    apiKey: API_KEY,
     authDomain: "turismo-mi-pueblo.firebaseapp.com",
     projectId: "turismo-mi-pueblo",
     storageBucket: "turismo-mi-pueblo.appspot.com",

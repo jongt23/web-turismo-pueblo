@@ -9,6 +9,58 @@
     <meta name="description" content="" data-translate="metaDescription">
     
     <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1 data-translate="headerTitle">Descubre [Nombre de tu Pueblo]</h1>
+            <nav>
+                <a href="#gastronomia" data-translate="navGastronomia">Gastronomía</a>
+                <a href="#lugares" data-translate="navLugares">Lugares de Interés</a>
+                <a href="#rutas" data-translate="navRutas">Rutas y Senderismo</a>
+            </nav>
+            <!-- Selector de Idioma -->
+            <div id="language-switcher">
+                <button data-lang="es">ES</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="fr">FR</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero">
+                <h2 data-translate="heroTitle">Tu próxima aventura te espera</h2>
+            </section>
+
+            <section id="gastronomia">
+                <h2 data-translate="sectionTitleGastronomia">Gastronomía Local</h2>
+                <div id="bares-container" class="card-container"></div>
+            </section>
+
+            <section id="lugares">
+                <h2 data-translate="sectionTitleLugares">Lugares que no te puedes perder</h2>
+                <div id="lugares-container" class="card-container"></div>
+            </section>
+        
+            <section id="rutas">
+                <h2 data-translate="sectionTitleRutas">Rutas y Senderismo</h2>
+                <div id="rutas-container" class="card-container"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p data-translate="footerText">&copy; 2025 [Nombre de tu Pueblo] Turismo. Todos los derechos reservados.</p>
+        </footer>
+
+        <!-- Scripts de Firebase (sin cambios) -->
+        <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+
+        <!-- Nuestro script de JavaScript -->
+        <script src="js/config.js"></script>
+        <script src="js/app.js"></script>
+
+    </body>
 </head>
 <body>
 
