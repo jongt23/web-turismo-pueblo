@@ -104,3 +104,32 @@ footer {
         margin-top: 1rem;
     }
 }
+
+/* Estilos para el Selector de Idioma */
+#language-switcher {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#language-switcher button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#language-switcher button:hover {
+    background-color: white;
+    color: var(--color-principal);
+}
+
+/* Estilo para el botón activo */
+#language-switcher button.active {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    font-weight: bold;
+}
